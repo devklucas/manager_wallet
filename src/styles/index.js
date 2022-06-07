@@ -7,10 +7,14 @@ export default createGlobalStyle`
     box-sizing: border-box;
 }
 :root{
-    --background-color:#000000;
-    --text-color:#ffff;
     --primary-color:#FD377E;
-    --secondary-color:#E9ECEF ;
+    --primary-color2:#E34981;
+    --secondary-color:#03B898;
+    --Grey-4:#212529;
+    --Grey-3:#868E96;
+    --Grey-2:#E9ECEF;
+    --Grey-1:#F8F9FA;
+    --text-color:#ffffff;
 }
 button{
     cursor: pointer;
