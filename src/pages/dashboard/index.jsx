@@ -1,8 +1,9 @@
 import React from 'react'
+import { Header } from '../../components/header'
 
 const Dashboard = () => {
     return (
-        <h1>Dashboard</h1>
+        <Header/>
     )
 }
 export default Dashboard
