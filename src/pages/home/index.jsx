@@ -9,6 +9,7 @@ import {Container,
     MainText,
     DescriptionText,
     Art} from './styles'
+    
 const Home = () => {
     return (
         <Container>
