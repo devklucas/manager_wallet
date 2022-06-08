@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../assets/logoBlack.png'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Container = styled.div`
     width:100vw;
@@ -27,7 +28,7 @@ export const Header = () => {
         <Container>
             <BoxContent>
                 <img src={logo} alt='logomarca'/>
-                <ButtonStyled>Inicio</ButtonStyled>
+                <Link to='/'><ButtonStyled>Inicio</ButtonStyled></Link>
             </BoxContent>        
         </Container>
 

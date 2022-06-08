@@ -2,9 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.section`
-    width:35%;
+    width:100%;
     height:351px;
-    border:1px solid var(--Grey-2);
+    border:2px solid var(--Grey-2);
+    margin-bottom:16px;
 `
 const FormStyled = styled.form`
     width:90%;
@@ -23,6 +24,7 @@ const FormStyled = styled.form`
     }
     input{
         height:48px;
+        border-radius:8px;
     }
     p{
         color:var(--Grey-3);
@@ -45,6 +47,7 @@ const InputName = styled.input`
 const Select = styled.section`
      display:flex; 
     justify-content: space-between;
+    
 `
 const BoxValue = styled.div`
     display:flex;
@@ -70,6 +73,7 @@ const BoxType = styled.div`
     color:var(--Grey-3);
     outline: none;
     border:none;
+    border-radius:8px;
 } 
 `
 export const BoxInputs = () => {
@@ -82,12 +86,12 @@ export const BoxInputs = () => {
                 
                 <Select>
                 
-                <BoxValue className="boxValue">
+                <BoxValue>
                 <label >Valor</label>
                 <input type="number" name="value" placeholder="1            R$"/>
                 </BoxValue>
 
-                <BoxType className="boxType">
+                <BoxType>
                 <label >Tipo de Valor</label>
                 <select name="type" placeholder="Entrada">
                 <option name="Entradas" value="Entradas">
