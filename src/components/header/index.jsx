@@ -22,12 +22,16 @@ const ButtonStyled = styled.button`
     height:40px;
     background-color:var(--Grey-2);
     border-radius: 8px;
+    :hover{
+        background-color: var(--primary-color);
+        color:var(--text-color);
+    }
 `
 export const Header = () => {
     return (
         <Container>
             <BoxContent>
-                <img src={logo} alt='logomarca'/>
+                <Link to='/'><img src={logo} alt='logomarca'/></Link>
                 <Link to='/'><ButtonStyled>Inicio</ButtonStyled></Link>
             </BoxContent>        
         </Container>
