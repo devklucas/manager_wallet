@@ -8,9 +8,8 @@ display: flex;
 justify-content: space-between;
 background-color: #f8f9fa;
 border-radius: 4px;
-border-left: 4px solid red;
 margin-bottom: 32px;
-//border-left: 4px solid propsentradas#03B898  Despesas#E9ECEF
+border-left: 4px solid ${(props) => props.type === "Entradas" ? "var(--secondary-color)" : "var(--Grey-2)"};
 `;
 export const MoreDetails = styled.span`
 display: flex;

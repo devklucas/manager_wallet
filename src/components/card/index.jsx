@@ -6,7 +6,7 @@ import {Container, MoreDetails, Description} from './styles'
 const Card = ({item}) => {
   const {removeRelease} = useRelease()
   return (
-    <Container>
+    <Container type={item.type}>
       <Description>
         <h2>{item.description}</h2>
         <p>{item.type}</p>
