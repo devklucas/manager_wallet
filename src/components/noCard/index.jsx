@@ -7,6 +7,15 @@ const Container = styled.div`
         margin: 20px 0 20px 0;
         color: var(--Grey-3);
     }
+    img{
+        width:100%;
+    }
+    @media (max-width:900px){
+        width:100%;
+    }
+    h2{
+        font-size:22px;
+    }
 `
 const NoCard = () => {
     return (

@@ -25,3 +25,15 @@ export const ContainerResume = styled.div`
     flex-direction: column;
 
 `
+// export const ButtonShow = styled.button`
+// display:none;
+// @media (max-width:900px){
+//     display:block;
+//     height:38px;
+//     width: 72%;
+//     border-radius:8px;
+//     margin:20px auto;
+//     color:var(--text-color);
+//     background-color: var(--primary-color);
+// }
+// `

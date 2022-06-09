@@ -7,7 +7,7 @@ import {
   InputName,
   Select,
   BoxValue,
-  BoxType,
+  BoxType
 } from "./styles";
 
 const BoxInputs = () => {
@@ -32,7 +32,7 @@ const BoxInputs = () => {
     return (
     <Container>
       <FormStyled onSubmit={(e)=>handleSubmit(e)}>
-        <Label>Descriçao</Label>
+        <Label>Descrição</Label>
         <InputName type="text" name="description" placeholder="Digite aqui sua descrição"></InputName>
         <p>Ex.:Compras de roupas</p>
 

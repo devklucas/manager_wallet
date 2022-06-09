@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
     width:100%;
-    height:351px;
+    height:300px;
     border:2px solid var(--Grey-2);
     margin-bottom:16px;
 `
@@ -18,11 +18,11 @@ export const FormStyled = styled.form`
     button{
         background-color: var(--primary-color);
         color:var(--text-color);
-        height:48px;
+        height:38px;
         border-radius: 8px;
     }
     input{
-        height:48px;
+        height:38px;
         border-radius:8px;
     }
     p{
@@ -52,8 +52,9 @@ export const Select = styled.section`
 export const BoxValue = styled.div`
     display:flex;
     flex-direction: column;
+    width:40%;
     input{
-    width:128px;
+    width:100%;
     background-color: var(--Grey-1);
     color:var(--Grey-3);
     outline: none;
@@ -66,9 +67,10 @@ export const BoxValue = styled.div`
 export const BoxType = styled.div`
     display: flex;
     flex-direction: column;
+    width:55%;
     select{
-    width:128px;
-    height:48px;
+    width:100%;
+    height:38px;
     background-color: var(--Grey-1);
     color:var(--Grey-3);
     outline: none;

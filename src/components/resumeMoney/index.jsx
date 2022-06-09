@@ -9,7 +9,8 @@ const Container = styled.section`
     width:60%;
     flex-direction: column;
     @media (max-width:900px){
-        display:none; 
+        width: 90%;
+        margin: 20px auto;
     }
 `
 const BoxTitle = styled.div`
@@ -17,7 +18,6 @@ const BoxTitle = styled.div`
     width:100%;
     justify-content:space-between;
     align-items:center;
-    
     div{
         display:flex;
     }
@@ -36,8 +36,16 @@ const BoxTitle = styled.div`
         color:var(--text-color);
     }
     @media (max-width:900px){
-    
-  }
+        width:90%;
+        margin:10px 0 10px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        button{
+            margin-left: 3px;
+            margin-top:10px;
+            padding:15px;
+        }
+    }
 `
 const BoxCards = styled.ul`
     margin-top:24px;

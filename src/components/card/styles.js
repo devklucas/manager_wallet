@@ -10,6 +10,10 @@ background-color: #f8f9fa;
 border-radius: 4px;
 margin-bottom: 32px;
 border-left: 4px solid ${(props) => props.type === "Entradas" ? "var(--secondary-color)" : "var(--Grey-2)"};
+@media (max-width:900px){
+        width:100%;
+        margin-bottom: 15px;
+    }
 `;
 export const MoreDetails = styled.span`
 display: flex;
@@ -28,6 +32,11 @@ button {
   align-items: center;
   justify-content: center;
 }
+@media (max-width:900px){
+  p{
+    font-size:0.7rem;
+  }
+}
 `;
 
 export const Description = styled.div`
@@ -43,5 +52,11 @@ h2 {
 p {
   color: #868e96;
   font-size: 12px;
+}
+@media (max-width:900px){
+        margin-left:10px;
+  h2{
+    font-size: 0.8rem;
+  }
 }
 `;
