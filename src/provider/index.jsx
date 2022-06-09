@@ -19,14 +19,14 @@ export const ReleaseProvider = ({children}) => {
        setFilter(card)
     }
 
-    // const CalculateSalary = () => {
-    //     let Entradas = 
-    //     console.log(Entradas)
-    // }
-    // CalculateSalary()
+    const removeRelease = (id) => {
+        const newListRelease = releases.filter((item)=> item.id != id ? item : null)
+        setReleases(newListRelease)
+        setFilter(newListRelease)
+    }
     
     return(
-        <releasesContext.Provider value={{releases,setReleases,filter,setFilter,selectFilter,total}}>
+        <releasesContext.Provider value={{releases,setReleases,filter,setFilter,selectFilter,total,removeRelease}}>
             {children}
         </releasesContext.Provider>
     )
