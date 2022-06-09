@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { useRelease } from '../../provider'
 import Card from '../card'
-
+import NoCard from '../noCard'
 
 const Container = styled.section`
     display:flex;
@@ -45,10 +45,12 @@ const BoxCards = styled.ul`
     
   }
 `
-const Title = styled.h2``
+const Title = styled.h2`
+    color: var(--Grey-4);
+`
 
 const ResumeMoney = () => {
-    const {filter,selectFilter} = useRelease()
+    const {releases, filter, selectFilter} = useRelease()
     return(
         <Container>
             <BoxTitle>    
@@ -59,12 +61,15 @@ const ResumeMoney = () => {
             <button onClick={()=>selectFilter("pay")}>Despesas</button>
             </div> 
             </BoxTitle>
+            {releases.length === 0 ?
+            <NoCard></NoCard>
+            :
             <BoxCards>
                 {filter && filter.map((item) =>{ 
                     return <Card key={item.id} item={item}/>
                     }
                 )}
-            </BoxCards>
+            </BoxCards>}
         </Container>
     )
 }

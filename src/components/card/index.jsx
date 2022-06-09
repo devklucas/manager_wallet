@@ -12,7 +12,7 @@ const Card = ({item}) => {
         <p>{item.type}</p>
       </Description>
       <MoreDetails>
-        <p>{item.value}</p>
+        <p>{(Number(item.value)).toLocaleString("pt-BR", {style: "currency",currency: "BRL",})}</p>
         <button onClick={()=>removeRelease(item.id)}>
           <img src={ico} alt="botao excluir" />
         </button>

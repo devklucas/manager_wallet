@@ -23,6 +23,10 @@ button {
   margin-left: 27px;
   margin-right: 40px;
   justify-content: flex-end;
+  display:flex;
+  border-radius:4px;
+  align-items: center;
+  justify-content: center;
 }
 `;
 

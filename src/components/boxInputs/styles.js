@@ -35,11 +35,12 @@ export const Label = styled.label`
 export const InputName = styled.input`
     width:100%;
     background-color: var(--Grey-1);
-    color:var(--Grey-3);
+    color:var(--Grey-4);
     outline: none;
     border:none;
+    padding:10px;
     ::placeholder{
-        padding-left:10px;
+        padding-left: 10px;
         color:var(--Grey-3);
     }
 `
