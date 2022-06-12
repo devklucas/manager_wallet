@@ -4,7 +4,9 @@ export const releasesContext = createContext()
  
 export const ReleaseProvider = ({children}) => {
     const [releases,setReleases] = useState([])
+
     const [filter, setFilter] = useState([])
+    
     let total = releases.map(a=>a.type === 'Despesas' ? -(a.value) : +(a.value)).reduce((a,b)=>a+b,0)
 
     const selectFilter = (state) => {
